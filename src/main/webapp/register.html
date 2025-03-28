@@ -13,21 +13,33 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-2"></div>
-		<div class="col-md-8">
-		    <h2>Sign Up</h2>
-			    <form>
+		<div class="col-md-8 style = "margin-left: 35%">
+		    <h2>Employee Sign Up Form</h2>
+			    <form action="/projectw3c/employee" method="post">
 				    <label>First Name</label>
 				    <input type="text" name="firstname">
 				    <label>Last Name</label>
 				    <input type="text" name="lastname">
 				    <label>Email Address</label>
-				    <input type="email" name="email">
+				    <input type="email" name="email"> 
+				    <label>NIC</label>
+				    <input type="text" name="nicui">
 				    <label>Username</label>
 				    <input type="text" name="username">
 				    <label>Password</label>
 				    <input type="password" name="password">
-				    <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-				    <input type="submit" value="Sign up" class="btn btn-primary">
+				    
+				    <label> Select gender</label>
+				    <div style="display:inline-flex">
+				    	<label><input type="radio" name="genderui" value="Male"> Male</label>
+				    	<label  style="padding-left: 5px;"> <input type="radio" name="genderui" value="Female">Female</label>
+			    	</div>
+				    <br></br>
+				    <div>
+                        <input type="submit" value="Sign up" class="btn btn-primary">
+                        <input type="reset" value="clear" class="btn btn-primary">
+                    </div>
+				    
 				 <div class="clearfix"></div>
 		    	</form>
 		</div>
